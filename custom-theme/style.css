@@ -1,0 +1,9 @@
+/**
+ * Theme Name: Custom Theme
+ */
+
+ body {
+   margin: 0;
+   padding: 1em;
+   font: 1em/1.5 Georgia, serif;
+ }
