@@ -32,8 +32,6 @@ services:
     expose:
       - "80"
     restart: always
-    volumes:
-      - ./custom-theme:/var/www/html/wp-content/themes/custom-theme
 volumes:
   certificates:
     external: true
