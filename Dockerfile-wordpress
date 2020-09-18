@@ -1,0 +1,9 @@
+ARG PROJECT=default
+
+FROM wordpress:latest AS base
+
+FROM base AS content
+ARG PROJECT
+COPY --chown=www-data:www-data ./wp-content/${PROJECT} ./wp-content
+
+FROM content AS development
